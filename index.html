@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mushfiq's Personal Website</title>
+    <title>Mushfiqur Rahim</title>
     <style>
-        /* পুরো ওয়েবসাইটের সাধারণ ডিজাইন */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #1a1a2e;
@@ -18,7 +17,6 @@
             min-height: 100vh;
         }
 
-        /* প্রোফাইল কার্ডের ডিজাইন */
         .profile-card {
             background-color: #162447;
             padding: 30px;
@@ -29,10 +27,9 @@
             width: 90%;
         }
 
-        /* প্রোফাইল পিকচারের গোল ফ্রেম */
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 4px solid #e43f5a;
             object-fit: cover;
@@ -49,14 +46,18 @@
             font-size: 16px;
             color: #b8b5ff;
             line-height: 1.5;
+            margin-bottom: 20px;
         }
 
-        /* সুন্দর বাটন বা সোশ্যাল লিংক */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #e43f5a;
+            display: block;
+            padding: 12px;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -64,22 +65,36 @@
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background-color: #ff2e63;
+        .btn-fb {
+            background-color: #1877f2;
+        }
+
+        .btn-fb:hover {
+            background-color: #145dbf;
+        }
+
+        .btn-insta {
+            background-color: #e1306c;
+        }
+
+        .btn-insta:hover {
+            background-color: #b81d51;
         }
     </style>
 </head>
 <body>
 
     <div class="profile-card">
-        <!-- এখানে আপনার পছন্দের যেকোনো ছবির লিংক বসাতে পারেন -->
-        <img class="profile-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150" alt="Profile Picture">
+        <!-- এখানে আপনার ছবির সঠিক নাম 'IMG_8840.jpg' বসানো হয়েছে -->
+        <img class="profile-img" src="IMG_8840.jpg" alt="Mushfiqur Rahim">
         
         <h1>Mushfiqur Rahim</h1>
-        <p>ওয়েব ডেভেলপমেন্টের দুনিয়ায় আপনাকে স্বাগতম! এটি আমার তৈরি প্রথম ওয়েবসাইট।</p>
+        <p>ওয়েব ডেভেলপমেন্টের দুনিয়ায় আপনাকে স্বাগত! এটি আমার তৈরি প্রথম পার্সোনাল ওয়েবসাইট।</p>
         
-        <!-- আপনার ফেসবুক বা যেকোনো প্রোফাইলের লিংক দিতে পারেন নিচে -->
-        <a href="https://github.com/mushfiqrohim01-lgtm" target="_blank" class="btn">আমার সাথে যোগাযোগ করুন</a>
+        <div class="btn-container">
+            <a href="https://www.facebook.com/share/1BWQSyaM8P/" target="_blank" class="btn btn-fb">Facebook-এ যুক্ত হোন</a>
+            <a href="https://www.instagram.com/mushfiq_22?igsh=MXdjdGcyMGh4ZDZyNA==" target="_blank" class="btn btn-insta">Instagram-এ ফলো করুন</a>
+        </div>
     </div>
 
 </body>
