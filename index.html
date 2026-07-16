@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mushfiqur Rahim</title>
+    <title>Mushfiqur Rahim - My Books</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #1a1a2e;
             color: #ffffff;
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
         }
@@ -25,6 +25,7 @@
             text-align: center;
             max-width: 350px;
             width: 90%;
+            margin-bottom: 30px;
         }
 
         .profile-img {
@@ -63,37 +64,218 @@
             border-radius: 25px;
             font-weight: bold;
             transition: 0.3s;
+            text-align: center;
         }
 
-        .btn-fb {
-            background-color: #1877f2;
+        .btn-fb { background-color: #1877f2; }
+        .btn-fb:hover { background-color: #145dbf; }
+        .btn-insta { background-color: #e1306c; }
+        .btn-insta:hover { background-color: #b81d51; }
+
+        /* বইয়ের সেকশন */
+        .books-section {
+            width: 90%;
+            max-width: 600px;
+            background-color: #1f4068;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
         }
 
-        .btn-fb:hover {
-            background-color: #145dbf;
+        .books-section h2 {
+            color: #e43f5a;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #e43f5a;
+            padding-bottom: 10px;
         }
 
-        .btn-insta {
-            background-color: #e1306c;
+        .book-card {
+            background-color: #162447;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        .btn-insta:hover {
-            background-color: #b81d51;
+        .book-img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid #b8b5ff;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 5px 0;
+        }
+
+        .book-desc {
+            font-size: 14px;
+            color: #dfdbff;
+            font-style: italic;
+            line-height: 1.4;
+            margin: 10px 0 0 0;
+            background-color: #1a1a2e;
+            padding: 8px;
+            border-radius: 5px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
 
+    <!-- প্রোফাইল সেকশন -->
     <div class="profile-card">
-        <!-- এখানে আপনার ছবির সঠিক নাম 'IMG_8840.jpg' বসানো হয়েছে -->
         <img class="profile-img" src="IMG_8840.jpg" alt="Mushfiqur Rahim">
-        
         <h1>Mushfiqur Rahim</h1>
         <p>ওয়েব ডেভেলপমেন্টের দুনিয়ায় আপনাকে স্বাগত! এটি আমার তৈরি প্রথম পার্সোনাল ওয়েবসাইট।</p>
         
         <div class="btn-container">
             <a href="https://www.facebook.com/share/1BWQSyaM8P/" target="_blank" class="btn btn-fb">Facebook-এ যুক্ত হোন</a>
             <a href="https://www.instagram.com/mushfiq_22?igsh=MXdjdGcyMGh4ZDZyNA==" target="_blank" class="btn btn-insta">Instagram-এ ফলো করুন</a>
+        </div>
+    </div>
+
+    <!-- বইয়ের লাইব্রেরি সেকশন (১৮টি বই) -->
+    <div class="books-section">
+        <h2>My Favorite Books (আমার প্রিয় বইসমূহ)</h2>
+        
+        <div class="books-container">
+            
+            <!-- বই ১ -->
+            <div class="book-card">
+                <img class="book-img" src="book1.jpg" alt="Book 1">
+                <p class="book-title">বই ১</p>
+                <p class="book-desc">"Very Good Book!"</p>
+            </div>
+
+            <!-- বই ২ -->
+            <div class="book-card">
+                <img class="book-img" src="book2.jpg" alt="Book 2">
+                <p class="book-title">বই ২</p>
+                <p class="book-desc">"Nice book, highly recommended."</p>
+            </div>
+
+            <!-- বই ৩ -->
+            <div class="book-card">
+                <img class="book-img" src="book3.jpg" alt="Book 3">
+                <p class="book-title">বই ৩</p>
+                <p class="book-desc">"Awesome story!"</p>
+            </div>
+
+            <!-- বই ৪ -->
+            <div class="book-card">
+                <img class="book-img" src="book4.jpg" alt="Book 4">
+                <p class="book-title">বই ৪</p>
+                <p class="book-desc">"Excellent and interesting."</p>
+            </div>
+
+            <!-- বই ৫ -->
+            <div class="book-card">
+                <img class="book-img" src="book5.jpg" alt="Book 5">
+                <p class="book-title">বই ৫</p>
+                <p class="book-desc">"Very nice read."</p>
+            </div>
+
+            <!-- বই ৬ -->
+            <div class="book-card">
+                <img class="book-img" src="book6.jpg" alt="Book 6">
+                <p class="book-title">বই ৬</p>
+                <p class="book-desc">"Good writing style."</p>
+            </div>
+
+            <!-- বই ৭ -->
+            <div class="book-card">
+                <img class="book-img" src="book7.jpg" alt="Book 7">
+                <p class="book-title">বই ৭</p>
+                <p class="book-desc">"Great concept!"</p>
+            </div>
+
+            <!-- বই ৮ -->
+            <div class="book-card">
+                <img class="book-img" src="book8.jpg" alt="Book 8">
+                <p class="book-title">বই ৮</p>
+                <p class="book-desc">"Really nice book."</p>
+            </div>
+
+            <!-- বই ৯ -->
+            <div class="book-card">
+                <img class="book-img" src="book9.jpg" alt="Book 9">
+                <p class="book-title">বই ৯</p>
+                <p class="book-desc">"Love this book!"</p>
+            </div>
+
+            <!-- বই ১০ -->
+            <div class="book-card">
+                <img class="book-img" src="book10.jpg" alt="Book 10">
+                <p class="book-title">বই ১০</p>
+                <p class="book-desc">"Superb book!"</p>
+            </div>
+
+            <!-- বই ১১ -->
+            <div class="book-card">
+                <img class="book-img" src="book11.jpg" alt="Book 11">
+                <p class="book-title">বই ১১</p>
+                <p class="book-desc">"Fantastic story."</p>
+            </div>
+
+            <!-- বই ১২ -->
+            <div class="book-card">
+                <img class="book-img" src="book12.jpg" alt="Book 12">
+                <p class="book-title">বই ১২</p>
+                <p class="book-desc">"Wonderful read."</p>
+            </div>
+
+            <!-- বই ১৩ -->
+            <div class="book-card">
+                <img class="book-img" src="book13.jpg" alt="Book 13">
+                <p class="book-title">বই ১৩</p>
+                <p class="book-desc">"Very creative book."</p>
+            </div>
+
+            <!-- বই ১৪ -->
+            <div class="book-card">
+                <img class="book-img" src="book14.jpg" alt="Book 14">
+                <p class="book-title">বই ১৪</p>
+                <p class="book-desc">"Good and informative."</p>
+            </div>
+
+            <!-- বই ১৫ -->
+            <div class="book-card">
+                <img class="book-img" src="book15.jpg" alt="Book 15">
+                <p class="book-title">বই ১৫</p>
+                <p class="book-desc">"Must read!"</p>
+            </div>
+
+            <!-- বই ১৬ -->
+            <div class="book-card">
+                <img class="book-img" src="book16.jpg" alt="Book 16">
+                <p class="book-title">বই ১৬</p>
+                <p class="book-desc">"Nicely written."</p>
+            </div>
+
+            <!-- বই ১৭ -->
+            <div class="book-card">
+                <img class="book-img" src="book17.jpg" alt="Book 17">
+                <p class="book-title">বই ১৭</p>
+                <p class="book-desc">"Outstanding book!"</p>
+            </div>
+
+            <!-- বই ১৮ -->
+            <div class="book-card">
+                <img class="book-img" src="book18.jpg" alt="Book 18">
+                <p class="book-title">বই ১৮</p>
+                <p class="book-desc">"Amazing experience reading this."</p>
+            </div>
+
         </div>
     </div>
 
